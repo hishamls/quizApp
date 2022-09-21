@@ -1,0 +1,114 @@
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box ;
+}
+body{
+    font-family: tahoma, Arial;
+}
+.quizApp{
+    margin: 20px auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+/* Quiz info Area  */
+.quizApp .quizInfo{
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+}
+.quizApp .quizInfo .Category{
+    flex: 1;
+}
+.quizApp .quizInfo .count{
+    flex: 1;
+    text-align: right;
+}
+/* Quiz Area  */
+.quizApp .quizArea{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+}
+.quizApp .quizArea h2{
+    margin: 0;
+}
+/* Answers Area */
+.quizApp .answersArea{
+    background-color: #fff;
+    padding: 0 20px 20px; 
+}
+.quizApp .oneAnswerDiv{
+    background-color: #fff;
+    padding: 15px;
+}
+.quizApp .answersArea .oneAnswerDiv:not(:last-child){
+    border-bottom: 1px solid #dfdfdf ;
+}
+
+.oneAnswerDiv input[type="radio"]:checked + label{
+    color: #0075ff;
+}
+.oneAnswerDiv label{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #777;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+/* Submit Button */
+.submit-button{
+    display: block;
+    background-color: #0075ff;
+    color: #dfdfdf;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+}
+.submit-button:focus{
+    outline: none;
+}
+/* Progress Area */
+.progressArea{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #dfdfdf;
+}
+.bullets {
+    display: flex;
+    flex: 1;
+}
+.bullets span{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 100%;
+    margin: 3px;
+    cursor: pointer;
+}
+.bullets span.on{
+    background-color: #0075ff;
+}
+/* Results Area */
+.results span{
+    font-weight: bold;
+    font-size: x-large;
+}
+.results span.bad{
+    color: rgb(125, 5, 5);
+}
+.results span.good{
+    color: rgb(16, 62, 18);
+}
+.results span.perfect{
+    color: #0075ff
+}

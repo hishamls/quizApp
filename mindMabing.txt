@@ -1,0 +1,10 @@
+Done!
+1. Create json object for queitions.
+2. Create HTML markup.
+3. Style the page with CSS.
+4. Create AJAX requests.
+5. Create bullets function.
+
+
+On Progress!
+6. Create data function.
